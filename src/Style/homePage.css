@@ -1,0 +1,19 @@
+/* .section_1{
+    background-image: url('../../public/images/main-banner.webp');
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section_1::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.205);
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.126);
+} */

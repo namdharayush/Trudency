@@ -1,0 +1,48 @@
+.cutsom_nav_ul{
+    display: flex;
+    list-style: none;
+}
+.cutsom_nav_ul li{
+    margin: 0 20px;
+}
+
+.cutsom_nav_ul li .nav_link{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.cutsom_nav_ul .nav_link.active{
+    color: red;
+}
+
+.mobile_view_li{
+    padding: 20px 40px;
+    font-size: 25px;
+}
+.mobile_view_link{
+    color: white;
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.mobile_view_link.active{
+    color: red;
+}
+
+.custom_drawer {
+    background-color: rgba(0, 0, 0, 0.864);
+    color: white;   
+    height:100vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.custom_drawer.open {
+    height: 100vh;
+}
+
+.custom_drawer.close {
+   height: 0;
+}
