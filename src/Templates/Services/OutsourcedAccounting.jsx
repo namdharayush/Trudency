@@ -11,7 +11,7 @@ import Footer from '../Components/Footer';
 import styles from '../../Style/About.module.css'
 
 
-function BookkeepingService() {
+function OutsourcedAccounting() {
 
     const { active_header } = useSelector(state => state.active_header)
 
@@ -120,7 +120,7 @@ function BookkeepingService() {
                             opacity: '0.6',
                             fontSize: '25px'
                         }}>
-                            Bookkeeping Services
+                            Outsourced Accounting Services
                         </Typography>
 
                         <Typography
@@ -140,16 +140,16 @@ function BookkeepingService() {
                                 textAlign: 'start',
                             }}
                         >
-                            High quality <Box component='span' sx={{
+                            Your <Box component='span' sx={{
                                 backgroundColor: '#7ADCDB',
                                 color: '#00454e',
                                 padding: '10px 20px',
                                 borderRadius: '15px',
                                 userSelect: 'none',
-                                display: 'block',
+                                // display: 'block',
                                 width: 'max-content'
-                            }}>bookkeeping</Box>
-                            services
+                            }}>trusted</Box> <br />
+                            financial partner
                         </Typography>
 
                         <Box
@@ -177,7 +177,7 @@ function BookkeepingService() {
 
                             }}
                         >
-                            Prompt, accurate bookkeeping services that are tailored to your unique business needs. With Ratiobox, save time, money and effort by outsourcing your books with us.
+                            Our outsourced accounting services are perfect for ambitious businesses looking to benefit from wide ranging industry and accountancy expertise. Save money, business time and resources by outsourcing with Ratiobox, as we work to maximise efficiency and remain compliant.
                         </Box>
 
                         <Box
@@ -209,7 +209,7 @@ function BookkeepingService() {
                                         transform: 'rotate(0)'
                                     },
                                 }
-                            }}>Outsource Your Bookkeeping
+                            }}>Outsource Your Accounting Today
                             </Button>
                             <Button sx={{
                                 backgroundColor: 'white',
@@ -272,7 +272,7 @@ function BookkeepingService() {
                             fontSize: '25px',
                             color: '#00454e'
                         }}>
-                            Our Bookkeeping Services
+                            Outsourced Accounting Services
                         </Typography>
 
 
@@ -285,7 +285,7 @@ function BookkeepingService() {
                             color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Save time, money and effort by outsourcing your books with Ratiobox
+                            Build or improve your accounts department with outsourced accounting from Ratiobox
                         </Typography>
 
 
@@ -1312,4 +1312,4 @@ function BookkeepingService() {
     )
 }
 
-export default BookkeepingService
+export default OutsourcedAccounting

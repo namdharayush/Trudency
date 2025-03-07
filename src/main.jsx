@@ -12,6 +12,7 @@ import PageNotFound from './Templates/PageNotFound.jsx'
 import MeetTheTeam from './Templates/About-Us/MeetTheTeam.jsx'
 import CaseStudies from './Templates/About-Us/CaseStudies.jsx'
 import BookkeepingService from './Templates/Services/BookkeepingService.jsx'
+import OutsourcedAccounting from './Templates/Services/OutsourcedAccounting.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,10 +51,10 @@ const router = createBrowserRouter([
             element:<BookkeepingService />
           },
           
-          // {
-          //   path:'/about-us/our-process',
-          //   element:<PageNotFound />
-          // },
+          {
+            path:'/services/outsourced-accounting-services',
+            element:<OutsourcedAccounting />
+          },
           // {
           //   path:'/about-us/case-studies',
           //   element:<CaseStudies />
