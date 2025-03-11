@@ -77,6 +77,11 @@ function HeaderMenu() {
                 dispatch(ActiveHeaderAction.setActiveHeader(false))
             }, 1200);
         }
+        
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Enables smooth scrolling
+        });
     };
 
     const handleUlClick = (event) => {
@@ -425,13 +430,13 @@ function HeaderMenu() {
                                     listStyle: 'none', padding: '0px', position: { xs: 'relative', md: 'absolute' }, top: { xs: '100%', md: '0' }, left: { xs: '0', md: '50%' }, width: '100%', height: '100%', display: 'none'
                                 }}>
                                     <Box component='li' sx={{ maxWidth: '100%', fontSize: { xs: '18px', sm: '24px', md: '30px' }, padding: { xs: '10px 40px', md: '10px 0' }, fontWeight: '650', letterSpacing: '1px' }} >
-                                        <NavLink to='/specification/limited-company-accountants' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Limited Company Accountants</NavLink>
+                                        <NavLink to='/specialisms/limited-company-accounting/' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Limited Company Accountants</NavLink>
                                     </Box>
                                     <Box component='li' sx={{ maxWidth: '100%', fontSize: { xs: '18px', sm: '24px', md: '30px' }, padding: { xs: '10px 40px', md: '10px 0' }, fontWeight: '650', letterSpacing: '1px' }} >
-                                        <NavLink to='/specification/corporate-accounting' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Corporate Accounting</NavLink>
+                                        <NavLink to='/specialisms/corporate-accounting/' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Corporate Accounting</NavLink>
                                     </Box>
                                     <Box component='li' sx={{ maxWidth: '100%', fontSize: { xs: '18px', sm: '24px', md: '30px' }, padding: { xs: '10px 40px', md: '10px 0' }, fontWeight: '650', letterSpacing: '1px' }} >
-                                        <NavLink to='/specification/accounting-for-letting-agents' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Accounting for Letting Agents</NavLink>
+                                        <NavLink to='/specialisms/accounting-for-letting-agents/' className='sub_menu_item' style={{ textDecoration: 'none', color: 'white' }} onMouseOver={(e) => e.currentTarget.style.color = '#7adcdb'} onMouseOut={(e) => e.currentTarget.style.color = 'white'}>Accounting for Letting Agents</NavLink>
                                     </Box>
                                 </Box>
                             </Box>

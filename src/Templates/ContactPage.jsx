@@ -196,23 +196,23 @@ function ContactPage() {
                                     <Box component='div' sx={{ display: 'flex', justifyContent: 'space-between' }}>
                                         <Box component='div' sx={{ display: 'flex', flexDirection: 'column', width: '90%' }}>
                                             <Box component='label' htmlFor='name' sx={{ marginBottom: '15px', fontSize: '23px', color: 'white' }}>Your Name *</Box>
-                                            <Box component='input' name='name' id='name' type='text' sx={{ borderRadius: '5px', marginRight: '10px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
+                                            <Box component='input' name='name' required={true} id='name' type='text' sx={{ borderRadius: '5px', marginRight: '10px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
                                         </Box>
 
                                         <Box component='div' sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
                                             <Box component='label' htmlFor='email' sx={{ marginBottom: '15px', fontSize: '23px', color: 'white' }}>Your Email *</Box>
-                                            <Box component='input' name='email' id='email' type='email' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
+                                            <Box component='input' name='email' required={true} id='email' type='email' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
                                         </Box>
                                     </Box>
 
                                     <Box component='div' sx={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', marginTop: '20px' }}>
                                         <Box component='label' htmlFor='subject' sx={{ marginBottom: '15px', fontSize: '23px', color: 'white' }}>Subject *</Box>
-                                        <Box component='input' name='subject' id='subject' type='text' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
+                                        <Box component='input' name='subject' required={true} id='subject' type='text' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white' }} />
                                     </Box>
 
                                     <Box component='div' sx={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', marginTop: '20px' }}>
                                         <Box component='label' htmlFor='message' sx={{ marginBottom: '15px', fontSize: '23px', color: 'white' }}>Message *</Box>
-                                        <Box component='textarea' name='message' id='message' rows='7' cols='50' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white', resize: 'vertical', minHeight: '25px', maxHeight: '150px' }} />
+                                        <Box component='textarea' name='message' required={true} id='message' rows='7' cols='50' sx={{ borderRadius: '5px', maxWidth: '100%', outline: 'none', border: 'none', fontSize: '20px', padding: '15px', backgroundColor: '#00454e', color: 'white', resize: 'vertical', minHeight: '25px', maxHeight: '150px' }} />
                                     </Box>
 
 

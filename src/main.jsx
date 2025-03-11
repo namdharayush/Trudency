@@ -13,6 +13,11 @@ import MeetTheTeam from './Templates/About-Us/MeetTheTeam.jsx'
 import CaseStudies from './Templates/About-Us/CaseStudies.jsx'
 import BookkeepingService from './Templates/Services/BookkeepingService.jsx'
 import OutsourcedAccounting from './Templates/Services/OutsourcedAccounting.jsx'
+import PayrollOutsourced from './Templates/Services/PayrollOutsourced.jsx'
+import FinancialDirector from './Templates/Services/FinancialDirector.jsx'
+import LimitedCompany from './Templates/Specialisms/LimitedCompany.jsx'
+import CorporateAccounting from './Templates/Specialisms/CorporateAccounting.jsx'
+import Accounting from './Templates/Specialisms/Accounting.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,10 +36,6 @@ const router = createBrowserRouter([
             element:<MeetTheTeam />
           },
           
-          // {
-          //   path:'/about-us/our-process',
-          //   element:<PageNotFound />
-          // },
           {
             path:'/about-us/case-studies',
             element:<CaseStudies />
@@ -55,11 +56,34 @@ const router = createBrowserRouter([
             path:'/services/outsourced-accounting-services',
             element:<OutsourcedAccounting />
           },
-          // {
-          //   path:'/about-us/case-studies',
-          //   element:<CaseStudies />
-          // },
-
+          
+          {
+            path:'/services/payroll-outsourcing',
+            element:<PayrollOutsourced />
+          },
+          {
+            path:'/services/financial-director-services',
+            element:<FinancialDirector />
+          },
+        ]
+      },
+      {
+        path: '/specialisms',
+        children:[
+          {
+            path:'/specialisms/limited-company-accounting/',
+            element:<LimitedCompany />
+          },
+          
+          {
+            path:'/specialisms/corporate-accounting/',
+            element:<CorporateAccounting />
+          },
+          
+          {
+            path:'/specialisms/accounting-for-letting-agents/',
+            element:<Accounting />
+          },
         ]
       },
 

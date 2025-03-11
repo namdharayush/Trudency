@@ -1,17 +1,13 @@
 import { Box, Button, Container, Grid2, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import bookkeeping_service1 from '/images/Services/bookkeeping-service1.jpg'
-import bookkeeping_service2 from '/images/Services/bookkeeping_service2.jpg'
+import financial_servie_1 from '/images/Services/financial_servie_1.jpg'
 import cube from '/images/cube.svg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer';
 
-import styles from '../../Style/About.module.css'
-
-
-function BookkeepingService() {
+function FinancialDirector() {
 
     const { active_header } = useSelector(state => state.active_header)
 
@@ -71,7 +67,6 @@ function BookkeepingService() {
             {
                 !active_header && <>
                     <Container
-
                         component="div"
                         disableGutters
                         sx={{
@@ -120,7 +115,7 @@ function BookkeepingService() {
                             opacity: '0.6',
                             fontSize: '25px'
                         }}>
-                            Bookkeeping Services
+                            Financial Director Services
                         </Typography>
 
                         <Typography
@@ -140,16 +135,15 @@ function BookkeepingService() {
                                 textAlign: 'start',
                             }}
                         >
-                            High quality <Box component='span' sx={{
+                            Financial <Box component='span' sx={{
                                 backgroundColor: '#7ADCDB',
                                 color: '#00454e',
                                 padding: '10px 20px',
                                 borderRadius: '15px',
                                 userSelect: 'none',
-                                display: 'block',
+                                // display: 'block',
                                 width: 'max-content'
-                            }}>bookkeeping</Box>
-                            services
+                            }}>Director </Box>Services
                         </Typography>
 
                         <Box
@@ -177,7 +171,7 @@ function BookkeepingService() {
 
                             }}
                         >
-                            Prompt, accurate bookkeeping services that are tailored to your unique business needs. With Trudency, save time, money and effort by outsourcing your books with us.
+                            Our Virtual Finance Director services offer a cost-effective approach to help your business make strategic business decisions. Get access to our team of strategic decision makers, who work with you to create potential funding strategies, monitor spending, create budgets and more.
                         </Box>
 
                         <Box
@@ -210,7 +204,7 @@ function BookkeepingService() {
                                             transform: 'rotate(0)'
                                         },
                                     }
-                                }}>Outsource Your Bookkeeping
+                                }}>Hire Us As Your Financial Director
                                 </Button>
                             </NavLink>
                             <NavLink to='tel:7984919378'>
@@ -276,7 +270,7 @@ function BookkeepingService() {
                             fontSize: '25px',
                             color: '#00454e'
                         }}>
-                            Our Bookkeeping Services
+                            Trudency FD Services
                         </Typography>
 
 
@@ -289,7 +283,7 @@ function BookkeepingService() {
                             color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Save time, money and effort by outsourcing your books with Trudency
+                            What's Typically Included In Our Finance Director Services?
                         </Typography>
 
 
@@ -305,11 +299,12 @@ function BookkeepingService() {
                                         width: "100%",
                                         height: "500px",
                                         opacity: '0.7',
+
                                         fill: "rgba(255, 255, 255, 0.5)",
                                     }}>
                                         <path d="M150.11.04l-.14-.04L.36,42.5l-.36.1v164.95l113.83,37.15.15.05,147.78-45.6.35-.11V32.44L150.11.04ZM114.03,77.03l147.08-43.55v54.55l-88.34,28.14v109.39l-58.28,17.98-.45-166.52ZM173.77,169.14l86.23,29.51-86.23,26.61v-56.12ZM173.77,168.08v-51.18l87.34-27.82v108.89l-87.34-29.89ZM259.83,32.82l-146.3,43.32L2.29,42.99,149.97,1.04l109.86,31.78ZM1,43.65l112.03,33.38.45,166.51L1,206.83V43.65Z"></path>
                                     </Box>
-                                    <Box component='img' src={bookkeeping_service1} sx={{
+                                    <Box component='img' src={financial_servie_1} sx={{
                                         width: "100%",
                                         position: 'absolute',
                                         top: '0',
@@ -320,8 +315,8 @@ function BookkeepingService() {
                                         WebkitMaskImage: `url(${cube})`,
                                         WebkitMaskRepeat: "no-repeat",
                                         maskPosition: 'center',
-                                        overflow: "hidden",
-                                        zIndex: '0',
+                                        // overflow: "hidden",
+                                        // zIndex: '0',
                                     }}>
                                     </Box>
                                 </Box>
@@ -332,61 +327,123 @@ function BookkeepingService() {
                                 <Box component='div'>
 
                                     <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
-                                        <Typography variant="h3" sx={{
-                                            fontSize: {
-                                                xs: '30px',
-                                                sm: '45px',
-                                                lg: '70px'
-                                            },
-                                            color: '#00454e',
-                                            fontWeight: '750',
-                                            textAlign: 'start',
-                                            letterSpacing: '1px',
-                                            marginRight: '10px'
-                                        }}>
-                                            We'll Help You To
-                                        </Typography>
+                                        <Box component='ul' sx={{ paddingLeft: '0', color: '#00454e' }}>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Strategic Advisory & Collaboration
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Grow your business using the knowledge of our strategic decision makers.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Financial Modelling
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Gain insight that can help you plan your business spending.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Cash Flow Forecasting
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Avoid shortfalls and negative cash flow with predictions of future earnings.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Cash Flow Analysis
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Better understand your available finances for transactions and business operations.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Preparing Company Reports
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Help your team make strategic decisions on all operational activities.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Growth Advisory
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Board-Level Support
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Create Funding Strategies
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Adherence to Financial Regulations
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Acquisition Accounting
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Merger Accounting
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Tax Planning
+                                            </Box>
+                                        </Box>
+
                                     </Box>
-
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maintain Supplier Relationships -</Box> Our bookkeepers ensure up-to-date contact and payments with your supply chain, helping you to upkeep positive relations.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maximise Cash Flow -</Box> Stay on top of debtors, reduce aged debt whilst navigating supplier payment terms to better manage available funds.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Meet Deadlines -</Box> We understand your legal obligations as a business owner to keep precise records of sales, expenses and purchases for various HMRC returns. Our services ensure that you never miss a deadline so that you always have cash in hand.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Make Informed Decisions -</Box> Our experienced team provides you with reports, from sales and purchase ledger to profit and cash flow forecasts, to help you make informed business decisions.
-                                    </Typography>
-
                                     <Box
-                                        marginTop='50px'
+                                        // marginTop='50px'
                                         width='max-content'>
                                         <Button sx={{
                                             backgroundColor: 'white',
@@ -414,204 +471,7 @@ function BookkeepingService() {
                                                     transform: 'rotate(0)'
                                                 },
                                             }
-                                        }}>Our Process <ArrowCircleRightIcon sx={{
-                                            marginLeft: '10px',
-                                            fontSize: {
-                                                xs: "25px",
-                                                sm: "30px",
-                                                lg: "35px",
-                                            },
-                                            transform: 'rotate(90deg)',
-                                        }} />
-                                        </Button>
-                                        <Button sx={{
-                                            backgroundColor: 'white',
-                                            fontSize: {
-                                                xs: "14px",
-                                                sm: "18px",
-                                            },
-
-                                            padding: {
-                                                xs: "5px 20px",
-                                                lg: "15px 30px",
-                                            },
-                                            borderRadius: '40px',
-                                            textTransform: 'capitalize',
-                                            border: '2px solid #00454e',
-                                            color: '#00454e',
-                                            background: 'rgba(0, 0, 0, 0)',
-                                            fontWeight: '750',
-                                            marginLeft: '30px',
-                                            transition: 'all 0.2s linear',
-                                            ":hover": {
-                                                background: '#00454e',
-                                                color: 'white',
-                                                "& .MuiSvgIcon-root": {
-                                                    transition: 'all 0.2s linear',
-                                                    transform: 'rotate(0)'
-                                                },
-                                            }
-                                        }}>Contact Us <ArrowCircleRightIcon sx={{
-                                            marginLeft: '10px',
-                                            fontSize: {
-                                                xs: "25px",
-                                                sm: "30px",
-                                                lg: "35px",
-                                            },
-                                            transform: 'rotate(90deg)',
-                                        }} />
-                                        </Button>
-
-                                    </Box>
-
-
-                                </Box>
-
-                            </Grid2>
-
-                        </Grid2>
-
-
-                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
-
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2'  >
-
-                                <Box component='div' sx={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <Box component='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.11 244.75" sx={{
-                                        position: 'absolute',
-                                        top: '0',
-                                        zIndex: '1',
-                                        width: "100%",
-                                        height: "500px",
-                                        opacity: '0.7',
-                                        fill: "rgba(255, 255, 255, 0.5)",
-                                    }}>
-                                        <path d="M150.11.04l-.14-.04L.36,42.5l-.36.1v164.95l113.83,37.15.15.05,147.78-45.6.35-.11V32.44L150.11.04ZM114.03,77.03l147.08-43.55v54.55l-88.34,28.14v109.39l-58.28,17.98-.45-166.52ZM173.77,169.14l86.23,29.51-86.23,26.61v-56.12ZM173.77,168.08v-51.18l87.34-27.82v108.89l-87.34-29.89ZM259.83,32.82l-146.3,43.32L2.29,42.99,149.97,1.04l109.86,31.78ZM1,43.65l112.03,33.38.45,166.51L1,206.83V43.65Z"></path>
-                                    </Box>
-                                    <Box component='img' src={bookkeeping_service2} sx={{
-                                        width: "100%",
-                                        position: 'absolute',
-                                        top: '0',
-                                        height: '500px',
-                                        objectFit: "cover",
-                                        maskImage: `url(${cube})`,
-                                        maskRepeat: "no-repeat",
-                                        WebkitMaskImage: `url(${cube})`,
-                                        WebkitMaskRepeat: "no-repeat",
-                                        maskPosition: 'center',
-                                        overflow: "hidden",
-                                        zIndex: '0',
-                                    }}>
-                                    </Box>
-                                </Box>
-                            </Grid2>
-
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='1' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-
-                                <Box component='div'>
-
-                                    <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
-                                        <Typography variant="h3" sx={{
-                                            fontSize: {
-                                                xs: '30px',
-                                                sm: '45px',
-                                                lg: '70px'
-                                            },
-                                            color: '#00454e',
-                                            fontWeight: '750',
-                                            textAlign: 'start',
-                                            letterSpacing: '1px',
-                                            marginRight: '10px'
-                                        }}>
-                                            Bookkeeping Sub Services
-                                        </Typography>
-                                    </Box>
-
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Purchase Ledger Management -</Box> Monitor your business' outgoings and maintain supply chain.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Sales Ledger & Credit Management -</Box> Get a clearer picture of your financial situation throughout the year, improve cash flow.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Processing Payments & Invoices -</Box> Ensure payments are approved and processed correctly.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Bank Reconciliation -</Box>  Detect any possible errors in transactions recorded.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Construction Industry Scheme (CIS) Compliance -</Box>  Manage sub-contractor payments.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Making Tax Digital (MTD) -</Box>  Keep digital records and make submissions to HRMC electronically.
-                                    </Typography>
-
-                                    <Box
-                                        marginTop='50px'
-                                        width='max-content'>
-                                        <Button sx={{
-                                            backgroundColor: 'white',
-                                            fontSize: {
-                                                xs: "14px",
-                                                sm: "18px",
-                                            },
-
-                                            padding: {
-                                                xs: "5px 20px",
-                                                lg: "15px 30px",
-                                            },
-                                            borderRadius: '40px',
-                                            textTransform: 'capitalize',
-                                            border: '2px solid #00454e',
-                                            color: '#00454e',
-                                            background: 'rgba(0, 0, 0, 0)',
-                                            fontWeight: '750',
-                                            transition: 'all 0.2s linear',
-                                            ":hover": {
-                                                background: '#00454e',
-                                                color: 'white',
-                                                "& .MuiSvgIcon-root": {
-                                                    transition: 'all 0.2s linear',
-                                                    transform: 'rotate(0)'
-                                                },
-                                            }
-                                        }}>Hiring Vs Outsourcing <ArrowCircleRightIcon sx={{
+                                        }}>Let's Work Together <ArrowCircleRightIcon sx={{
                                             marginLeft: '10px',
                                             fontSize: {
                                                 xs: "25px",
@@ -630,8 +490,9 @@ function BookkeepingService() {
 
                         </Grid2>
 
-
-
+                        {/* <Box component='p' sx={{ fontWeight: '550', fontSize: '45px', textAlign: 'center', color: '#00454e' }}>
+                            Benefit from the support of dedicated payroll experts when you choose to outsource. Our specialists seamlessly integrate with your team, so your payroll processes can run smoothly without the added headache.
+                        </Box> */}
 
                     </Container>
 
@@ -665,7 +526,7 @@ function BookkeepingService() {
                             fontSize: '25px',
                             // color: '#00454e'
                         }}>
-                            Bookkeeping Services From Trudency
+                            Finance Director Outsourcing
                         </Typography>
 
 
@@ -678,7 +539,7 @@ function BookkeepingService() {
                             // color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Why Outsource Bookkeeping To Us?
+                            Our strategic decision makers deliver high-quality services to help grow your business
                         </Typography>
 
 
@@ -693,7 +554,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Cost-effective</Box> We develop cost-effective strategies for your business and take a proactive approach to enhance the efficiency of your processes.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Informed Financial Decisions</Box> An Outsourced Finance Director could be the right fit for your business if you're looking for improved, efficient financial decision-making. Our specialists' role is to monitor your company's finances to offer you proactive advice and guidance, helping to predict and avoid problems before they occur.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -706,7 +567,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduce Stress</Box> Outsourcing your bookkeeping means no added stress of staff absences, sickness, or other leave issues. Think of us as your reliable, extended team who help to streamline your essential services.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Full Support</Box> Whether you'd prefer round-the-clock support, or occasional counsel when it comes to important financial decisions, we are flexible to suit you. Outsourcing a Finance Director with Trudency means you have access to our expert team who strive to support your business goals and keep your finances on track.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -719,7 +580,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Save Time</Box> Bookkeeping can be a tedious task; our services enable you to remove this from your to-do list and put more time into your business, all the while trusting your records are being taken of accurately every time.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Part of the Team</Box> If you're looking for board-level support without the expense of paying a full-time salary, our Outsourced Virtual FD services are the solution.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -732,12 +593,53 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduced Overheads</Box> Save money on additional training, equipment expenses and employer contributions like pension, by outsourcing with Trudency. No in-house hiring results in less management time, and removes the added stress of finding sufficient office space.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Complete Package</Box> We offer a fully comprehensive accounting and bookkeeping package in addition to an Outsourced Virtual FD, so you can choose to solely rely on our services to keep your finances in order.
                                     </Typography>
                                 </Box>
                             </Grid2>
 
                         </Grid2>
+                        {/* 
+                        <Box
+                            marginTop='50px'
+                            width='max-content'>
+                            <Button sx={{
+                                backgroundColor: 'white',
+                                fontSize: {
+                                    xs: "14px",
+                                    sm: "18px",
+                                },
+
+                                padding: {
+                                    xs: "5px 20px",
+                                    lg: "15px 30px",
+                                },
+                                borderRadius: '40px',
+                                textTransform: 'capitalize',
+                                border: '2px solid #7adcdb',
+                                color: '#7adcdb',
+                                background: 'rgba(0, 0, 0, 0)',
+                                fontWeight: '750',
+                                transition: 'all 0.2s linear',
+                                ":hover": {
+                                    background: '#7adcdb',
+                                    color: '#00454e',
+                                    "& .MuiSvgIcon-root": {
+                                        transition: 'all 0.2s linear',
+                                        transform: 'rotate(0)'
+                                    },
+                                }
+                            }}>Speack to our specialists <ArrowCircleRightIcon sx={{
+                                marginLeft: '10px',
+                                fontSize: {
+                                    xs: "25px",
+                                    sm: "30px",
+                                    lg: "35px",
+                                },
+                                transform: 'rotate(90deg)',
+                            }} />
+                            </Button>
+                        </Box> */}
 
                     </Container>
 
@@ -762,6 +664,15 @@ function BookkeepingService() {
                         }}
 
                         className="section_2">
+
+                        <Typography variant='h3' sx={{
+                            fontSize: '70px',
+                            fontWeight: '650',
+                            textAlign: 'start',
+                            color: '#00454e'
+                        }}>
+                            Why Choose Trudency
+                        </Typography>
 
                         <Box component='div' sx={{
                             // backgroundColor:'green',
@@ -1084,7 +995,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Who will be taking care of my Bookkeeping?
+                                    }}>Can I use outsourced Finance Director services if I already have an accountant?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails >
@@ -1093,24 +1004,23 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>You will be assigned your own dedicated account manager to guide you through our process, and be your point of contact for all and any enquiries.</Typography>
+                                    }}>Yes, we prioritise working around your existing financial structure. This means, if you already have an accountant, we can work alongside them and take on any responsibilities they are not currently managing.</Typography>
                                 </AccordionDetails>
                             </Accordion>
-
                             <Accordion disableGutters expanded={expanded === "panel2"} sx={{ backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none', borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', }} onChange={handleChange("panel2")}>
                                 <AccordionSummary>
                                     <Typography variant='h4' sx={{
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>How do outsourced Bookkeeping services work?</Typography>
+                                    }}>Can you attend regular board or management meetings?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
                                         fontWeight: '500',
                                         fontSize: '22px',
                                         opacity: '0.8'
-                                    }}>Your dedicated account manager will work with you and your team, integrating themselves with your existing software. Next, your transactions will be recorded and categorised to produce accurate financial statements.</Typography>
+                                    }}>Yes, we can attend regular board or management meetings, either in-person or virtually, if this suits your needs. Offering virtual options allows us to attend meetings, regardless of location.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel3"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel3")}>
@@ -1119,7 +1029,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Where can I access my Bookkeeping?</Typography>
+                                    }}>Can I hire a part time Finance Director?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
@@ -1127,7 +1037,7 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>We work with your existing software, so you maintain 24/7 access to all your bookkeeping, without added hassle. You remain in control of what work we take care of, as well as making all key decisions and approving payments.</Typography>
+                                    }}>Our Outsourced Finance Director services are scalable to suit your business needs. So, whether you’re looking for someone to oversee your firm's financial affairs, virtually attend board meetings, or simply fill the shoes of a Finance Director for a short period, we can help.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel4"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel4")}>
@@ -1136,7 +1046,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Are you a certified Bookkeeper?
+                                    }}>How to outsource Payroll?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
@@ -1145,50 +1055,12 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>Yes, we are MAAT qualified bookkeepers.</Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion disableGutters expanded={expanded === "panel5"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel5")}>
-                                <AccordionSummary>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '450',
-                                        fontSize: '30px',
-
-                                    }}>Which accounting software does Trudency specialise in?</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '500',
-                                        fontSize: '22px',
-                                        opacity: '0.8'
-
-                                    }}>We specialise in, but are not limited to, the following accounting software:
-
-                                        Quickbooks, Xero, Sage 200, Sage 50 Business Cloud, SAP, Oracle, Microsoft Dynamics NAV, Zoho Books, Clearbooks, FreeAgent, FreshBooks, Access Financials, Netsuite, different ERP software.</Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion disableGutters expanded={expanded === "panel6"} sx={{ padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel6")}>
-                                <AccordionSummary>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '450',
-                                        fontSize: '30px',
-
-                                    }}>Are we limited to just bookkeeping services with Trudency?</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '500',
-                                        fontSize: '22px',
-                                        opacity: '0.8'
-
-                                    }}>No, our team is made up of a range of professionals with senior expertise in a range of services, such as payroll. Additionally, our finance director service provides further strategy-based support to help grow your business.</Typography>
+                                    }}>We specialise in, but are not limited to, the following accounting software: <br /> SAP, Oracle, Microsoft Dynamics NAV, Sage 200, Sage 50 Business Cloud, Xero, QuickBooks, Zoho, Clearbooks, FreeAgent, FreshBooks, Access Financials, Netsuite, different ERP software.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
 
                     </Container>
-
-
 
                     <Container
                         // ref={section5Ref}
@@ -1304,7 +1176,7 @@ function BookkeepingService() {
                             <span> / </span>
                             Services
                             <span> / </span>
-                            Bookkeeping Services
+                            Financial Director Services
                         </Typography>
                     </Container>
 
@@ -1316,4 +1188,4 @@ function BookkeepingService() {
     )
 }
 
-export default BookkeepingService
+export default FinancialDirector

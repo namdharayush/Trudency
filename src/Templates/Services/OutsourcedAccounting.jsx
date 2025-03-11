@@ -1,14 +1,11 @@
 import { Box, Button, Container, Grid2, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import bookkeeping_service1 from '/images/Services/bookkeeping-service1.jpg'
-import bookkeeping_service2 from '/images/Services/bookkeeping_service2.jpg'
+import outsourced_1 from '/images/Services/outsourced_1.jpg'
 import cube from '/images/cube.svg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer';
-
-import styles from '../../Style/About.module.css'
 
 
 function OutsourcedAccounting() {
@@ -177,68 +174,72 @@ function OutsourcedAccounting() {
 
                             }}
                         >
-                            Our outsourced accounting services are perfect for ambitious businesses looking to benefit from wide ranging industry and accountancy expertise. Save money, business time and resources by outsourcing with Ratiobox, as we work to maximise efficiency and remain compliant.
+                            Our outsourced accounting services are perfect for ambitious businesses looking to benefit from wide ranging industry and accountancy expertise. Save money, business time and resources by outsourcing with Trudency, as we work to maximise efficiency and remain compliant.
                         </Box>
 
                         <Box
                             marginTop='50px'
                             width='max-content'>
-                            <Button sx={{
-                                backgroundColor: 'white',
-                                fontSize: {
-                                    xs: "14px",
-                                    sm: "18px",
-                                },
+                            <NavLink to='/contact-us'>
+                                <Button sx={{
+                                    backgroundColor: 'white',
+                                    fontSize: {
+                                        xs: "14px",
+                                        sm: "18px",
+                                    },
 
-                                padding: {
-                                    xs: "5px 20px",
-                                    lg: "8px 25px",
-                                },
-                                borderRadius: '40px',
-                                textTransform: 'capitalize',
-                                border: '2px solid #7adcdb',
-                                color: '#7adcdb',
-                                background: 'rgba(0, 0, 0, 0)',
-                                fontWeight: '750',
-                                transition: 'all 0.2s linear',
-                                ":hover": {
-                                    background: '#7adcdb',
-                                    color: 'black',
-                                    "& .MuiSvgIcon-root": {
-                                        transition: 'all 0.2s linear',
-                                        transform: 'rotate(0)'
+                                    padding: {
+                                        xs: "5px 20px",
+                                        lg: "8px 25px",
                                     },
-                                }
-                            }}>Outsource Your Accounting Today
-                            </Button>
-                            <Button sx={{
-                                backgroundColor: 'white',
-                                fontSize: {
-                                    xs: "14px",
-                                    sm: "18px",
-                                },
-                                marginLeft: '30px',
-                                padding: {
-                                    xs: "5px 20px",
-                                    lg: "8px 25px",
-                                },
-                                borderRadius: '40px',
-                                textTransform: 'capitalize',
-                                border: '2px solid #7adcdb',
-                                color: '#7adcdb',
-                                background: 'rgba(0, 0, 0, 0)',
-                                fontWeight: '750',
-                                transition: 'all 0.2s linear',
-                                ":hover": {
-                                    background: '#7adcdb',
-                                    color: 'black',
-                                    "& .MuiSvgIcon-root": {
-                                        transition: 'all 0.2s linear',
-                                        transform: 'rotate(0)'
+                                    borderRadius: '40px',
+                                    textTransform: 'capitalize',
+                                    border: '2px solid #7adcdb',
+                                    color: '#7adcdb',
+                                    background: 'rgba(0, 0, 0, 0)',
+                                    fontWeight: '750',
+                                    transition: 'all 0.2s linear',
+                                    ":hover": {
+                                        background: '#7adcdb',
+                                        color: 'black',
+                                        "& .MuiSvgIcon-root": {
+                                            transition: 'all 0.2s linear',
+                                            transform: 'rotate(0)'
+                                        },
+                                    }
+                                }}>Outsource Your Accounting Today
+                                </Button>
+                            </NavLink>
+                            <NavLink to='tel:7984919378'>
+                                <Button sx={{
+                                    backgroundColor: 'white',
+                                    fontSize: {
+                                        xs: "14px",
+                                        sm: "18px",
                                     },
-                                }
-                            }}>Call us on 0800 955 3350
-                            </Button>
+                                    marginLeft: '30px',
+                                    padding: {
+                                        xs: "5px 20px",
+                                        lg: "8px 25px",
+                                    },
+                                    borderRadius: '40px',
+                                    textTransform: 'capitalize',
+                                    border: '2px solid #7adcdb',
+                                    color: '#7adcdb',
+                                    background: 'rgba(0, 0, 0, 0)',
+                                    fontWeight: '750',
+                                    transition: 'all 0.2s linear',
+                                    ":hover": {
+                                        background: '#7adcdb',
+                                        color: 'black',
+                                        "& .MuiSvgIcon-root": {
+                                            transition: 'all 0.2s linear',
+                                            transform: 'rotate(0)'
+                                        },
+                                    }
+                                }}>Call us on 7984919378
+                                </Button>
+                            </NavLink>
                         </Box>
 
                     </Container>
@@ -285,102 +286,23 @@ function OutsourcedAccounting() {
                             color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Build or improve your accounts department with outsourced accounting from Ratiobox
+                            Build or improve your accounts department with outsourced accounting from Trudency
                         </Typography>
 
 
-                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
-
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='1'  >
-
-                            <Box component='div' sx={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <Box component='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.11 244.75" sx={{
-                                        position: 'absolute',
-                                        top: '0',
-                                        zIndex: '1',
-                                        width: "100%",
-                                        height: "500px",
-                                        opacity: '0.7',
-                                        fill: "rgba(255, 255, 255, 0.5)",
-                                    }}>
-                                        <path d="M150.11.04l-.14-.04L.36,42.5l-.36.1v164.95l113.83,37.15.15.05,147.78-45.6.35-.11V32.44L150.11.04ZM114.03,77.03l147.08-43.55v54.55l-88.34,28.14v109.39l-58.28,17.98-.45-166.52ZM173.77,169.14l86.23,29.51-86.23,26.61v-56.12ZM173.77,168.08v-51.18l87.34-27.82v108.89l-87.34-29.89ZM259.83,32.82l-146.3,43.32L2.29,42.99,149.97,1.04l109.86,31.78ZM1,43.65l112.03,33.38.45,166.51L1,206.83V43.65Z"></path>
-                                    </Box>
-                                    <Box component='img' src={bookkeeping_service1} sx={{
-                                        width: "100%",
-                                        position:'absolute',
-                                        top:'0',
-                                        height:'500px',
-                                        objectFit: "cover",
-                                        maskImage: `url(${cube})`,
-                                        maskRepeat: "no-repeat",
-                                        WebkitMaskImage: `url(${cube})`,
-                                        WebkitMaskRepeat: "no-repeat",
-                                        maskPosition: 'center',
-                                        overflow: "hidden",
-                                        zIndex: '0',
-                                    }}>
-                                    </Box>
-                                </Box>
-                            </Grid2>
+                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='70px' sx={{ width: '100%' }}>
 
                             <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-
                                 <Box component='div'>
-
-                                    <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
-                                        <Typography variant="h3" sx={{
-                                            fontSize: {
-                                                xs: '30px',
-                                                sm: '45px',
-                                                lg: '70px'
-                                            },
-                                            color: '#00454e',
-                                            fontWeight: '750',
-                                            textAlign: 'start',
-                                            letterSpacing: '1px',
-                                            marginRight: '10px'
-                                        }}>
-                                            We'll Help You To
-                                        </Typography>
-                                    </Box>
-
                                     <Typography variant="h6" sx={{
                                         fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
+                                        // color: '#00454e',
                                         fontWeight: '450',
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maintain Supplier Relationships -</Box> Our bookkeepers ensure up-to-date contact and payments with your supply chain, helping you to upkeep positive relations.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px', fontSize: '30px' }} component='span'>Bookkeeping Services</Box> Our Outsourced Bookkeeping services include purchase ledger management, processing payments and invoices; all of which can be time-consuming for you.
                                     </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maximise Cash Flow -</Box> Stay on top of debtors, reduce aged debt whilst navigating supplier payment terms to better manage available funds.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Meet Deadlines -</Box> We understand your legal obligations as a business owner to keep precise records of sales, expenses and purchases for various HMRC returns. Our services ensure that you never miss a deadline so that you always have cash in hand.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Make Informed Decisions -</Box> Our experienced team provides you with reports, from sales and purchase ledger to profit and cash flow forecasts, to help you make informed business decisions.
-                                    </Typography>
-
                                     <Box
                                         marginTop='50px'
                                         width='max-content'>
@@ -410,7 +332,7 @@ function OutsourcedAccounting() {
                                                     transform: 'rotate(0)'
                                                 },
                                             }
-                                        }}>Our Process <ArrowCircleRightIcon sx={{
+                                        }}>Hire a Bookkeeper <ArrowCircleRightIcon sx={{
                                             marginLeft: '10px',
                                             fontSize: {
                                                 xs: "25px",
@@ -418,8 +340,25 @@ function OutsourcedAccounting() {
                                                 lg: "35px",
                                             },
                                             transform: 'rotate(90deg)',
-                                        }} />
+                                        }}></ArrowCircleRightIcon>
                                         </Button>
+                                    </Box>
+                                </Box>
+                            </Grid2>
+                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
+                                <Box component='div'>
+                                    <Typography variant="h6" sx={{
+                                        fontSize: 'clamp(10px,4vw,23px)',
+                                        // color: '#00454e',
+                                        fontWeight: '450',
+                                        textAlign: 'start',
+                                        marginTop: '20px'
+                                    }}>
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Payroll Outsourcing</Box> Benefit from the support of dedicated payroll experts when you choose to outsource. We seamlessly integrate with your team, so your payroll processes can run smoothly.
+                                    </Typography>
+                                    <Box
+                                        marginTop='50px'
+                                        width='max-content'>
                                         <Button sx={{
                                             backgroundColor: 'white',
                                             fontSize: {
@@ -437,7 +376,6 @@ function OutsourcedAccounting() {
                                             color: '#00454e',
                                             background: 'rgba(0, 0, 0, 0)',
                                             fontWeight: '750',
-                                            marginLeft: '30px',
                                             transition: 'all 0.2s linear',
                                             ":hover": {
                                                 background: '#00454e',
@@ -447,7 +385,225 @@ function OutsourcedAccounting() {
                                                     transform: 'rotate(0)'
                                                 },
                                             }
-                                        }}>Contact Us <ArrowCircleRightIcon sx={{
+                                        }}>Outsource your Payroll <ArrowCircleRightIcon sx={{
+                                            marginLeft: '10px',
+                                            fontSize: {
+                                                xs: "25px",
+                                                sm: "30px",
+                                                lg: "35px",
+                                            },
+                                            transform: 'rotate(90deg)',
+                                        }}></ArrowCircleRightIcon>
+                                        </Button>
+                                    </Box>
+                                </Box>
+                            </Grid2>
+                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
+                                <Box component='div'>
+                                    <Typography variant="h6" sx={{
+                                        fontSize: 'clamp(10px,4vw,23px)',
+                                        // color: '#00454e',
+                                        fontWeight: '450',
+                                        textAlign: 'start',
+                                        marginTop: '20px'
+                                    }}>
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Financial Director Services</Box> Our virtual services give you access to our team of strategic decision-makers who can create funding strategies and monitor spending.
+                                    </Typography>
+                                    <Box
+                                        marginTop='50px'
+                                        width='max-content'>
+                                        <Button sx={{
+                                            backgroundColor: 'white',
+                                            fontSize: {
+                                                xs: "14px",
+                                                sm: "18px",
+                                            },
+
+                                            padding: {
+                                                xs: "5px 20px",
+                                                lg: "15px 30px",
+                                            },
+                                            borderRadius: '40px',
+                                            textTransform: 'capitalize',
+                                            border: '2px solid #00454e',
+                                            color: '#00454e',
+                                            background: 'rgba(0, 0, 0, 0)',
+                                            fontWeight: '750',
+                                            transition: 'all 0.2s linear',
+                                            ":hover": {
+                                                background: '#00454e',
+                                                color: 'white',
+                                                "& .MuiSvgIcon-root": {
+                                                    transition: 'all 0.2s linear',
+                                                    transform: 'rotate(0)'
+                                                },
+                                            }
+                                        }}>Hire an FD <ArrowCircleRightIcon sx={{
+                                            marginLeft: '10px',
+                                            fontSize: {
+                                                xs: "25px",
+                                                sm: "30px",
+                                                lg: "35px",
+                                            },
+                                            transform: 'rotate(90deg)',
+                                        }}></ArrowCircleRightIcon>
+                                        </Button>
+                                    </Box>
+                                </Box>
+                            </Grid2>
+                        </Grid2>
+
+
+
+                    </Container>
+
+                    <Container
+                        ref={section2Ref}
+                        component="div"
+                        maxWidth={false}
+                        disableGutters
+                        sx={{
+                            // height: "200vh",
+                            height: "max-content",
+                            textAlign: "center",
+                            overflow: "hidden",
+                            position: "relative",
+                            backgroundColor: '#00454e',
+                            paddingTop: '100px',
+                            paddingBottom: '100px',
+                            paddingLeft: '120px',
+                            paddingRight: '120px',
+                            fontFamily: '"Manrope", sans-serif',
+                            // backgroundColor: '#7adcdb'
+                        }}
+
+                        className="section_2">
+
+                        <Typography variant='h6' sx={{
+                            textAlign: 'start',
+                            color: 'white',
+                            marginBottom: '30px',
+                            fontSize: '30px',
+                            // color: '#00454e'
+                        }}>
+                            Who We Work With
+                        </Typography>
+
+
+                        <Typography variant='h2' sx={{
+                            textAlign: 'start',
+                            color: 'white',
+                            marginBottom: '50px',
+                            fontSize: '65px',
+                            fontWeight: '750',
+                            // color: '#00454e',
+                            letterSpacing: '2px'
+                        }}>
+                            Trudency works with a wide range of clients from a variety of sectors
+                        </Typography>
+
+
+                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
+
+                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='1'  >
+
+                                <Box component='div' sx={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    <Box component='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.11 244.75" sx={{
+                                        position: 'absolute',
+                                        top: '0',
+                                        zIndex: '1',
+                                        width: "100%",
+                                        height: "500px",
+                                        opacity: '0.7',
+                                        fill: "rgba(255, 255, 255, 0.5)",
+                                    }}>
+                                        <path d="M150.11.04l-.14-.04L.36,42.5l-.36.1v164.95l113.83,37.15.15.05,147.78-45.6.35-.11V32.44L150.11.04ZM114.03,77.03l147.08-43.55v54.55l-88.34,28.14v109.39l-58.28,17.98-.45-166.52ZM173.77,169.14l86.23,29.51-86.23,26.61v-56.12ZM173.77,168.08v-51.18l87.34-27.82v108.89l-87.34-29.89ZM259.83,32.82l-146.3,43.32L2.29,42.99,149.97,1.04l109.86,31.78ZM1,43.65l112.03,33.38.45,166.51L1,206.83V43.65Z"></path>
+                                    </Box>
+                                    <Box component='img' src={outsourced_1} sx={{
+                                        width: "100%",
+                                        position: 'absolute',
+                                        top: '0',
+                                        height: '500px',
+                                        objectFit: "cover",
+                                        maskImage: `url(${cube})`,
+                                        maskRepeat: "no-repeat",
+                                        WebkitMaskImage: `url(${cube})`,
+                                        WebkitMaskRepeat: "no-repeat",
+                                        maskPosition: 'center',
+                                        overflow: "hidden",
+                                        zIndex: '0',
+                                    }}>
+                                    </Box>
+                                </Box>
+                            </Grid2>
+
+                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
+
+                                <Box component='div'>
+
+                                    <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
+                                        <Typography variant="h3" sx={{
+                                            fontSize: {
+                                                xs: '22px',
+                                                sm: '27px',
+                                                lg: '35px'
+                                            },
+                                            color: 'white',
+                                            fontWeight: '750',
+                                            textAlign: 'start',
+                                            letterSpacing: '1px',
+                                            marginRight: '10px'
+                                        }}>
+                                            We provide outsourced accounting services across many industries, including:
+                                        </Typography>
+                                    </Box>
+
+                                    <Typography variant="h6" sx={{
+                                        fontSize: 'clamp(10px,4vw,23px)',
+                                        color: 'white',
+                                        fontWeight: '450',
+                                        textAlign: 'start',
+                                        marginTop: '20px'
+                                    }}>
+                                        <Box sx={{ fontWeight: '650', fontSize: '30px', lineHeight: '40px' }} component='span'>Construction <br />
+                                            Property Development <br />
+                                            Manufacturing <br />
+                                            Technology <br />
+                                            Ecommerce <br />
+                                            Healthcare <br />
+                                            Letting Agents <br /></Box><br /> There are many more sectors we provide accurate, prompt and personable services for. Get in touch with our team today to discuss your requirements.
+                                    </Typography>
+
+                                    <Box
+                                        marginTop='50px'
+                                        width='max-content'>
+                                        <Button sx={{
+                                            backgroundColor: '#00454e',
+                                            fontSize: {
+                                                xs: "14px",
+                                                sm: "18px",
+                                            },
+
+                                            padding: {
+                                                xs: "5px 20px",
+                                                lg: "15px 30px",
+                                            },
+                                            borderRadius: '40px',
+                                            textTransform: 'capitalize',
+                                            border: '2px solid #7adcdb',
+                                            color: '#7adcdb',
+                                            background: 'rgba(0, 0, 0, 0)',
+                                            fontWeight: '750',
+                                            transition: 'all 0.2s linear',
+                                            ":hover": {
+                                                background: '#7adcdb',
+                                                color: '#00454e',
+                                                "& .MuiSvgIcon-root": {
+                                                    transition: 'all 0.2s linear',
+                                                    transform: 'rotate(0)'
+                                                },
+                                            }
+                                        }}>Let's work Together <ArrowCircleRightIcon sx={{
                                             marginLeft: '10px',
                                             fontSize: {
                                                 xs: "25px",
@@ -457,7 +613,6 @@ function OutsourcedAccounting() {
                                             transform: 'rotate(90deg)',
                                         }} />
                                         </Button>
-
                                     </Box>
 
 
@@ -468,7 +623,7 @@ function OutsourcedAccounting() {
                         </Grid2>
 
 
-                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
+                        {/* <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
 
                             <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2'  >
 
@@ -486,9 +641,9 @@ function OutsourcedAccounting() {
                                     </Box>
                                     <Box component='img' src={bookkeeping_service2} sx={{
                                         width: "100%",
-                                        position:'absolute',
-                                        top:'0',
-                                        height:'500px',
+                                        position: 'absolute',
+                                        top: '0',
+                                        height: '500px',
                                         objectFit: "cover",
                                         maskImage: `url(${cube})`,
                                         maskRepeat: "no-repeat",
@@ -624,118 +779,9 @@ function OutsourcedAccounting() {
 
                             </Grid2>
 
-                        </Grid2>
-
-
-
-
+                        </Grid2> */}
                     </Container>
 
-                    <Container
-                        ref={section2Ref}
-                        component="div"
-                        maxWidth={false}
-                        disableGutters
-                        sx={{
-                            // height: "200vh",
-                            height: "max-content",
-                            textAlign: "center",
-                            overflow: "hidden",
-                            position: "relative",
-                            // backgroundColor: '#00454e',
-                            paddingTop: '100px',
-                            paddingBottom: '100px',
-                            paddingLeft: '120px',
-                            paddingRight: '120px',
-                            fontFamily: '"Manrope", sans-serif',
-                            backgroundColor: '#00454e',
-                            color: 'white'
-                        }}
-
-                        className="section_2">
-
-                        <Typography variant='h6' sx={{
-                            textAlign: 'start',
-                            color: 'white',
-                            marginBottom: '30px',
-                            fontSize: '25px',
-                            // color: '#00454e'
-                        }}>
-                            Bookkeeping Services From Ratiobox
-                        </Typography>
-
-
-                        <Typography variant='h2' sx={{
-                            textAlign: 'start',
-                            color: 'white',
-                            marginBottom: '50px',
-                            fontSize: '65px',
-                            fontWeight: '750',
-                            // color: '#00454e',
-                            letterSpacing: '2px'
-                        }}>
-                            Why Outsource Bookkeeping To Us?
-                        </Typography>
-
-
-                        <Grid2 container spacing={{ sm: 3, md: 2 }} mt='70px' sx={{ width: '100%' }}>
-
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-                                <Box component='div'>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        // color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Cost-effective</Box> We develop cost-effective strategies for your business and take a proactive approach to enhance the efficiency of your processes.
-                                    </Typography>
-                                </Box>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-                                <Box component='div'>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        // color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduce Stress</Box> Outsourcing your bookkeeping means no added stress of staff absences, sickness, or other leave issues. Think of us as your reliable, extended team who help to streamline your essential services.
-                                    </Typography>
-                                </Box>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-                                <Box component='div'>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        // color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Save Time</Box> Bookkeeping can be a tedious task; our services enable you to remove this from your to-do list and put more time into your business, all the while trusting your records are being taken of accurately every time.
-                                    </Typography>
-                                </Box>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 6, lg: 6 }} order='2' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
-                                <Box component='div'>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        // color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduced Overheads</Box> Save money on additional training, equipment expenses and employer contributions like pension, by outsourcing with Ratiobox. No in-house hiring results in less management time, and removes the added stress of finding sufficient office space.
-                                    </Typography>
-                                </Box>
-                            </Grid2>
-
-                        </Grid2>
-
-                    </Container>
 
                     <Container
                         component="div"
@@ -1080,7 +1126,7 @@ function OutsourcedAccounting() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Who will be taking care of my Bookkeeping?
+                                    }}>What are the benefits of outsourcing your accounting services with Trudency?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails >
@@ -1089,7 +1135,7 @@ function OutsourcedAccounting() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>You will be assigned your own dedicated account manager to guide you through our process, and be your point of contact for all and any enquiries.</Typography>
+                                    }}>Our services mean our qualified experts work as part of your extended team to take care of any accounting services you require. Benefit from an alternative to employment that is tailored to suit your unique business needs.</Typography>
                                 </AccordionDetails>
                             </Accordion>
 
@@ -1099,14 +1145,14 @@ function OutsourcedAccounting() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>How do outsourced Bookkeeping services work?</Typography>
+                                    }}>Why should my business consider outsourcing our accounting?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
                                         fontWeight: '500',
                                         fontSize: '22px',
                                         opacity: '0.8'
-                                    }}>Your dedicated account manager will work with you and your team, integrating themselves with your existing software. Next, your transactions will be recorded and categorised to produce accurate financial statements.</Typography>
+                                    }}>Trudency believes that any business can benefit from outsourcing their accounting services. Your business can rest assured knowing your accounts will be handled correctly and promptly, freeing up valuable time.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel3"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel3")}>
@@ -1115,7 +1161,7 @@ function OutsourcedAccounting() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Where can I access my Bookkeeping?</Typography>
+                                    }}>How much do your outsourced accounting services cost?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
@@ -1123,7 +1169,7 @@ function OutsourcedAccounting() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>We work with your existing software, so you maintain 24/7 access to all your bookkeeping, without added hassle. You remain in control of what work we take care of, as well as making all key decisions and approving payments.</Typography>
+                                    }}>Our services are a cost-effective alternative to hiring in-house. We offer competitive prices alongside our high-quality services. Our services are fully bespoke, meaning you can pick which services you need and how often you want them completed. For a more accurate quote, contact our team today for a no-obligation consultation.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel4"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel4")}>
@@ -1132,7 +1178,7 @@ function OutsourcedAccounting() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Are you a certified Bookkeeper?
+                                    }}>Which accounting software does Trudency specialise in?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
@@ -1141,43 +1187,7 @@ function OutsourcedAccounting() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>Yes, we are MAAT qualified bookkeepers.</Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion disableGutters expanded={expanded === "panel5"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel5")}>
-                                <AccordionSummary>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '450',
-                                        fontSize: '30px',
-
-                                    }}>Which accounting software does Ratiobox specialise in?</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '500',
-                                        fontSize: '22px',
-                                        opacity: '0.8'
-
-                                    }}>We specialise in, but are not limited to, the following accounting software:
-
-                                        Quickbooks, Xero, Sage 200, Sage 50 Business Cloud, SAP, Oracle, Microsoft Dynamics NAV, Zoho Books, Clearbooks, FreeAgent, FreshBooks, Access Financials, Netsuite, different ERP software.</Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion disableGutters expanded={expanded === "panel6"} sx={{ padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel6")}>
-                                <AccordionSummary>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '450',
-                                        fontSize: '30px',
-
-                                    }}>Are we limited to just bookkeeping services with Ratiobox?</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '500',
-                                        fontSize: '22px',
-                                        opacity: '0.8'
-
-                                    }}>No, our team is made up of a range of professionals with senior expertise in a range of services, such as payroll. Additionally, our finance director service provides further strategy-based support to help grow your business.</Typography>
+                                    }}>Our services are tailored to suit you and this approach extends to software, as Trudency is able to work with your existing systems in place. Let us seamlessly integrate into your business as part of your in-house team.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
@@ -1300,7 +1310,7 @@ function OutsourcedAccounting() {
                             <span> / </span>
                             Services
                             <span> / </span>
-                            Bookkeeping Services
+                            Outsourced Accounting Services
                         </Typography>
                     </Container>
 

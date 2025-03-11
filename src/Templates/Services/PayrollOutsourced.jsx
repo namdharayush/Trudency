@@ -1,8 +1,7 @@
 import { Box, Button, Container, Grid2, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import bookkeeping_service1 from '/images/Services/bookkeeping-service1.jpg'
-import bookkeeping_service2 from '/images/Services/bookkeeping_service2.jpg'
+import payroll_1 from '/images/Services/payroll_1.jpg'
 import cube from '/images/cube.svg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { NavLink } from 'react-router-dom';
@@ -11,7 +10,7 @@ import Footer from '../Components/Footer';
 import styles from '../../Style/About.module.css'
 
 
-function BookkeepingService() {
+function PayrollOutsourced() {
 
     const { active_header } = useSelector(state => state.active_header)
 
@@ -120,7 +119,7 @@ function BookkeepingService() {
                             opacity: '0.6',
                             fontSize: '25px'
                         }}>
-                            Bookkeeping Services
+                            Payroll Outsourcing
                         </Typography>
 
                         <Typography
@@ -140,7 +139,7 @@ function BookkeepingService() {
                                 textAlign: 'start',
                             }}
                         >
-                            High quality <Box component='span' sx={{
+                            Outsourced <Box component='span' sx={{
                                 backgroundColor: '#7ADCDB',
                                 color: '#00454e',
                                 padding: '10px 20px',
@@ -148,8 +147,7 @@ function BookkeepingService() {
                                 userSelect: 'none',
                                 display: 'block',
                                 width: 'max-content'
-                            }}>bookkeeping</Box>
-                            services
+                            }}>Payroll Services</Box>
                         </Typography>
 
                         <Box
@@ -177,7 +175,7 @@ function BookkeepingService() {
 
                             }}
                         >
-                            Prompt, accurate bookkeeping services that are tailored to your unique business needs. With Trudency, save time, money and effort by outsourcing your books with us.
+                            Payroll is not only time-consuming, but a complicated process that needs to be performed regularly. This is why Trudency offers payroll outsourcing services, to enable you to shift your focus to where it's needed.
                         </Box>
 
                         <Box
@@ -210,7 +208,7 @@ function BookkeepingService() {
                                             transform: 'rotate(0)'
                                         },
                                     }
-                                }}>Outsource Your Bookkeeping
+                                }}>Outsource Your Payroll
                                 </Button>
                             </NavLink>
                             <NavLink to='tel:7984919378'>
@@ -276,7 +274,7 @@ function BookkeepingService() {
                             fontSize: '25px',
                             color: '#00454e'
                         }}>
-                            Our Bookkeeping Services
+                            Payroll Outsourcing Company
                         </Typography>
 
 
@@ -289,7 +287,7 @@ function BookkeepingService() {
                             color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Save time, money and effort by outsourcing your books with Trudency
+                            Payroll Outsourcing Services from Trudency
                         </Typography>
 
 
@@ -305,11 +303,12 @@ function BookkeepingService() {
                                         width: "100%",
                                         height: "500px",
                                         opacity: '0.7',
+
                                         fill: "rgba(255, 255, 255, 0.5)",
                                     }}>
                                         <path d="M150.11.04l-.14-.04L.36,42.5l-.36.1v164.95l113.83,37.15.15.05,147.78-45.6.35-.11V32.44L150.11.04ZM114.03,77.03l147.08-43.55v54.55l-88.34,28.14v109.39l-58.28,17.98-.45-166.52ZM173.77,169.14l86.23,29.51-86.23,26.61v-56.12ZM173.77,168.08v-51.18l87.34-27.82v108.89l-87.34-29.89ZM259.83,32.82l-146.3,43.32L2.29,42.99,149.97,1.04l109.86,31.78ZM1,43.65l112.03,33.38.45,166.51L1,206.83V43.65Z"></path>
                                     </Box>
-                                    <Box component='img' src={bookkeeping_service1} sx={{
+                                    <Box component='img' src={payroll_1} sx={{
                                         width: "100%",
                                         position: 'absolute',
                                         top: '0',
@@ -320,8 +319,8 @@ function BookkeepingService() {
                                         WebkitMaskImage: `url(${cube})`,
                                         WebkitMaskRepeat: "no-repeat",
                                         maskPosition: 'center',
-                                        overflow: "hidden",
-                                        zIndex: '0',
+                                        // overflow: "hidden",
+                                        // zIndex: '0',
                                     }}>
                                     </Box>
                                 </Box>
@@ -332,59 +331,88 @@ function BookkeepingService() {
                                 <Box component='div'>
 
                                     <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
-                                        <Typography variant="h3" sx={{
-                                            fontSize: {
-                                                xs: '30px',
-                                                sm: '45px',
-                                                lg: '70px'
-                                            },
-                                            color: '#00454e',
-                                            fontWeight: '750',
-                                            textAlign: 'start',
-                                            letterSpacing: '1px',
-                                            marginRight: '10px'
-                                        }}>
-                                            We'll Help You To
-                                        </Typography>
+                                        <Box component='ul' sx={{ paddingLeft: '0', color: '#00454e' }}>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Pay Calculation and Processing
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Calculating total wage earnings, any deductions, filing payroll taxes and delivering payment
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Payslip, P60, P11d Production
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Pension Auto-enrolment Staging Support
+                                            </Box>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                Auto-enrolment Compliance
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                Ensure workplace pensions are set up correctly for those that meet the requirements.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                HR Advice & Guidance
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                This includes a helpline to deal with any HR discrepancies.
+                                            </Typography>
+                                            <Box component='li' sx={{ textAlign: 'start', fontSize: '23px', fontWeight: '650', marginBottom: '15px', marginTop: '15px' }}>
+                                                RTI Compliance
+                                            </Box>
+                                            <Typography variant="h6" sx={{
+                                                fontSize: {
+                                                    xs: '14px',
+                                                    sm: '16px',
+                                                    lg: '20px'
+                                                },
+                                                color: '#00454e',
+                                                fontWeight: '450',
+                                                textAlign: 'start',
+                                                letterSpacing: '1px',
+                                                lineHeight: '30px',
+                                                marginRight: '10px'
+                                            }}>
+                                                This involves the information employers are required to send to HMRC every time they pay employees.
+                                            </Typography>
+                                        </Box>
+
                                     </Box>
-
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maintain Supplier Relationships -</Box> Our bookkeepers ensure up-to-date contact and payments with your supply chain, helping you to upkeep positive relations.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Maximise Cash Flow -</Box> Stay on top of debtors, reduce aged debt whilst navigating supplier payment terms to better manage available funds.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Meet Deadlines -</Box> We understand your legal obligations as a business owner to keep precise records of sales, expenses and purchases for various HMRC returns. Our services ensure that you never miss a deadline so that you always have cash in hand.
-                                    </Typography>
-                                    <Typography variant="h6" sx={{
-                                        fontSize: 'clamp(10px,4vw,23px)',
-                                        color: '#00454e',
-                                        fontWeight: '450',
-                                        textAlign: 'start',
-                                        marginTop: '20px'
-                                    }}>
-                                        <Box sx={{ fontWeight: '650' }} component='span'>Make Informed Decisions -</Box> Our experienced team provides you with reports, from sales and purchase ledger to profit and cash flow forecasts, to help you make informed business decisions.
-                                    </Typography>
-
                                     <Box
                                         marginTop='50px'
                                         width='max-content'>
@@ -414,7 +442,7 @@ function BookkeepingService() {
                                                     transform: 'rotate(0)'
                                                 },
                                             }
-                                        }}>Our Process <ArrowCircleRightIcon sx={{
+                                        }}>Let's Work Together <ArrowCircleRightIcon sx={{
                                             marginLeft: '10px',
                                             fontSize: {
                                                 xs: "25px",
@@ -424,44 +452,6 @@ function BookkeepingService() {
                                             transform: 'rotate(90deg)',
                                         }} />
                                         </Button>
-                                        <Button sx={{
-                                            backgroundColor: 'white',
-                                            fontSize: {
-                                                xs: "14px",
-                                                sm: "18px",
-                                            },
-
-                                            padding: {
-                                                xs: "5px 20px",
-                                                lg: "15px 30px",
-                                            },
-                                            borderRadius: '40px',
-                                            textTransform: 'capitalize',
-                                            border: '2px solid #00454e',
-                                            color: '#00454e',
-                                            background: 'rgba(0, 0, 0, 0)',
-                                            fontWeight: '750',
-                                            marginLeft: '30px',
-                                            transition: 'all 0.2s linear',
-                                            ":hover": {
-                                                background: '#00454e',
-                                                color: 'white',
-                                                "& .MuiSvgIcon-root": {
-                                                    transition: 'all 0.2s linear',
-                                                    transform: 'rotate(0)'
-                                                },
-                                            }
-                                        }}>Contact Us <ArrowCircleRightIcon sx={{
-                                            marginLeft: '10px',
-                                            fontSize: {
-                                                xs: "25px",
-                                                sm: "30px",
-                                                lg: "35px",
-                                            },
-                                            transform: 'rotate(90deg)',
-                                        }} />
-                                        </Button>
-
                                     </Box>
 
 
@@ -471,6 +461,11 @@ function BookkeepingService() {
 
                         </Grid2>
 
+                        <Box component='p' sx={{ fontWeight: '550', fontSize: '45px', textAlign: 'center', color: '#00454e' }}>
+                            Benefit from the support of dedicated payroll experts when you choose to outsource. Our specialists seamlessly integrate with your team, so your payroll processes can run smoothly without the added headache.
+                        </Box>
+
+                        {/* 
 
                         <Grid2 container spacing={{ sm: 3, md: 2 }} mt='130px' sx={{ width: '100%' }}>
 
@@ -629,7 +624,7 @@ function BookkeepingService() {
                             </Grid2>
 
                         </Grid2>
-
+ */}
 
 
 
@@ -665,7 +660,7 @@ function BookkeepingService() {
                             fontSize: '25px',
                             // color: '#00454e'
                         }}>
-                            Bookkeeping Services From Trudency
+                            Payroll Outsourcing India
                         </Typography>
 
 
@@ -678,7 +673,7 @@ function BookkeepingService() {
                             // color: '#00454e',
                             letterSpacing: '2px'
                         }}>
-                            Why Outsource Bookkeeping To Us?
+                            4 Key Reasons to Outsource Payroll
                         </Typography>
 
 
@@ -693,7 +688,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Cost-effective</Box> We develop cost-effective strategies for your business and take a proactive approach to enhance the efficiency of your processes.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>1. Save Time and Money</Box> With years of industry experience behind us, we can save your business time by taking care of your Payroll and pension responsibilities, without the cost and stress of hiring internally.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -706,7 +701,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduce Stress</Box> Outsourcing your bookkeeping means no added stress of staff absences, sickness, or other leave issues. Think of us as your reliable, extended team who help to streamline your essential services.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>2. Reduce Stress</Box> By outsourcing these services with us, you can have peace of mind your employees will be paid correctly, compliantly and on-time.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -719,7 +714,7 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Save Time</Box> Bookkeeping can be a tedious task; our services enable you to remove this from your to-do list and put more time into your business, all the while trusting your records are being taken of accurately every time.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>3. Communication</Box> Our specialist team understands the importance of clear communication and accuracy. Trudency staff are all UK-based and employed directly by us, so you can rely on us to be on-hand to answer your queries.
                                     </Typography>
                                 </Box>
                             </Grid2>
@@ -732,12 +727,53 @@ function BookkeepingService() {
                                         textAlign: 'start',
                                         marginTop: '20px'
                                     }}>
-                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>Reduced Overheads</Box> Save money on additional training, equipment expenses and employer contributions like pension, by outsourcing with Trudency. No in-house hiring results in less management time, and removes the added stress of finding sufficient office space.
+                                        <Box sx={{ fontWeight: '650', display: 'block', width: 'max-content', marginBottom: '20px' }} component='span'>4. Accuracy</Box> A key responsibility for an employer is ensuring employees are paid accurately and promptly. With tax codes and NI rates changing all the time and needing to constantly report to HMRC, this can be overwhelming.
                                     </Typography>
                                 </Box>
                             </Grid2>
 
                         </Grid2>
+
+                        <Box
+                            marginTop='50px'
+                            width='max-content'>
+                            <Button sx={{
+                                backgroundColor: 'white',
+                                fontSize: {
+                                    xs: "14px",
+                                    sm: "18px",
+                                },
+
+                                padding: {
+                                    xs: "5px 20px",
+                                    lg: "15px 30px",
+                                },
+                                borderRadius: '40px',
+                                textTransform: 'capitalize',
+                                border: '2px solid #7adcdb',
+                                color: '#7adcdb',
+                                background: 'rgba(0, 0, 0, 0)',
+                                fontWeight: '750',
+                                transition: 'all 0.2s linear',
+                                ":hover": {
+                                    background: '#7adcdb',
+                                    color: '#00454e',
+                                    "& .MuiSvgIcon-root": {
+                                        transition: 'all 0.2s linear',
+                                        transform: 'rotate(0)'
+                                    },
+                                }
+                            }}>Speack to our specialists <ArrowCircleRightIcon sx={{
+                                marginLeft: '10px',
+                                fontSize: {
+                                    xs: "25px",
+                                    sm: "30px",
+                                    lg: "35px",
+                                },
+                                transform: 'rotate(90deg)',
+                            }} />
+                            </Button>
+                        </Box>
 
                     </Container>
 
@@ -1084,7 +1120,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Who will be taking care of my Bookkeeping?
+                                    }}>When should I consider outsourcing my company's Payroll processes?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails >
@@ -1093,7 +1129,7 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>You will be assigned your own dedicated account manager to guide you through our process, and be your point of contact for all and any enquiries.</Typography>
+                                    }}>If your company has found itself growing with frequent new hires, you might want to consider outsourcing your Payroll processes. This can free up valuable time that can be redirected towards running your business. Our team will ensure Payroll is completed accurately and on-time.</Typography>
                                 </AccordionDetails>
                             </Accordion>
 
@@ -1103,14 +1139,14 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>How do outsourced Bookkeeping services work?</Typography>
+                                    }}>What are the stresses of Payroll?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
                                         fontWeight: '500',
                                         fontSize: '22px',
                                         opacity: '0.8'
-                                    }}>Your dedicated account manager will work with you and your team, integrating themselves with your existing software. Next, your transactions will be recorded and categorised to produce accurate financial statements.</Typography>
+                                    }}>Payroll can be a stressful task, with its time sensitivity. On top of this, it comes with delicate issues such as disgruntled employees, who can make the job more difficult. Trudency allows you to outsource this stress, so you can spend more time on growing your business.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel3"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel3")}>
@@ -1119,7 +1155,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Where can I access my Bookkeeping?</Typography>
+                                    }}>Can you help me with pension auto-enrolment of employees?</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='h4' sx={{
@@ -1127,7 +1163,7 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>We work with your existing software, so you maintain 24/7 access to all your bookkeeping, without added hassle. You remain in control of what work we take care of, as well as making all key decisions and approving payments.</Typography>
+                                    }}>Yes, we understand that the introduction of the pension auto-enrolment legislation has had a huge impact on businesses. We can ensure that your employees are enrolled correctly into a qualifying pension scheme and help save you time and money by setting up a service that suits you and your employees.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel4"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel4")}>
@@ -1136,7 +1172,7 @@ function BookkeepingService() {
                                         fontWeight: '450',
                                         fontSize: '30px',
 
-                                    }}>Are you a certified Bookkeeper?
+                                    }}>How to outsource Payroll?
                                     </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
@@ -1145,10 +1181,27 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>Yes, we are MAAT qualified bookkeepers.</Typography>
+                                    }}>Outsourcing your payroll with us is easy, simply fill out our quick request form to book your free initial consultation. Alternatively, you can give us a call or send us an email <NavLink to='mailto:dhruv@trudency.com' style={{ color: '#7adcdb', fonwWeight: '650' }}>dhruv@trudency.com</NavLink></Typography>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion disableGutters expanded={expanded === "panel5"} sx={{ borderBottom: '1px solid rgba(255,255,255,0.5)', padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel5")}>
+                                <AccordionSummary>
+                                    <Typography variant='h4' sx={{
+                                        fontWeight: '450',
+                                        fontSize: '30px',
+
+                                    }}>Are we limited to just Payroll services with Trudency?</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='h4' sx={{
+                                        fontWeight: '500',
+                                        fontSize: '22px',
+                                        opacity: '0.8'
+
+                                    }}>No, our team is made up of a range of professionals with senior expertise in a range of services, such as bookkeeping. Additionally, our finance director service provides further strategy-based support to help grow your business.</Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion disableGutters expanded={expanded === "panel6"} sx={{ padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel6")}>
                                 <AccordionSummary>
                                     <Typography variant='h4' sx={{
                                         fontWeight: '450',
@@ -1162,26 +1215,7 @@ function BookkeepingService() {
                                         fontSize: '22px',
                                         opacity: '0.8'
 
-                                    }}>We specialise in, but are not limited to, the following accounting software:
-
-                                        Quickbooks, Xero, Sage 200, Sage 50 Business Cloud, SAP, Oracle, Microsoft Dynamics NAV, Zoho Books, Clearbooks, FreeAgent, FreshBooks, Access Financials, Netsuite, different ERP software.</Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion disableGutters expanded={expanded === "panel6"} sx={{ padding: '10px 0', backgroundColor: 'transparent', color: 'white', opacity: '0.9', boxShadow: 'none' }} onChange={handleChange("panel6")}>
-                                <AccordionSummary>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '450',
-                                        fontSize: '30px',
-
-                                    }}>Are we limited to just bookkeeping services with Trudency?</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography variant='h4' sx={{
-                                        fontWeight: '500',
-                                        fontSize: '22px',
-                                        opacity: '0.8'
-
-                                    }}>No, our team is made up of a range of professionals with senior expertise in a range of services, such as payroll. Additionally, our finance director service provides further strategy-based support to help grow your business.</Typography>
+                                    }}>We specialise in, but are not limited to, the following accounting software: <br />BrightPay, Sage Payroll, Xero Payroll, Quickbooks, Xero, Sage 200, Sage 50 Business Cloud, SAP, Oracle, Microsoft Dynamics NAV, Zoho Books, Clearbooks, FreeAgent, FreshBooks, Access Financials, Netsuite, different ERP software.</Typography>
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
@@ -1304,7 +1338,7 @@ function BookkeepingService() {
                             <span> / </span>
                             Services
                             <span> / </span>
-                            Bookkeeping Services
+                            Payroll Outsourcing
                         </Typography>
                     </Container>
 
@@ -1316,4 +1350,4 @@ function BookkeepingService() {
     )
 }
 
-export default BookkeepingService
+export default PayrollOutsourced

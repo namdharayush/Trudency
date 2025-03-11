@@ -72,19 +72,19 @@ function Footer() {
                                     Services
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Outsourced Accounting</NavLink>
+                                    <NavLink to='/services/outsourced-accounting-services' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Outsourced Accounting</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Bookkeeping Services</NavLink>
+                                    <NavLink to='/services/bookkeeping-services' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Bookkeeping Services</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Financial Director Services</NavLink>
+                                    <NavLink to='services/payroll-outsourcing' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Financial Director Services</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Payroll Outsourcing</NavLink>
+                                    <NavLink to='/services/financial-director-services' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Payroll Outsourcing</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Our Process</NavLink>
+                                    <NavLink to='/about-us/our-process' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Our Process</NavLink>
                                 </Typography>
                             </Box>
                         </Grid2>
@@ -95,13 +95,13 @@ function Footer() {
                                     Specialisms
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Limited Company Accountants</NavLink>
+                                    <NavLink to='/specialisms/limited-company-accounting/' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Limited Company Accountants</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Corporate Accounting</NavLink>
+                                    <NavLink to='/specialisms/corporate-accounting/' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Corporate Accounting</NavLink>
                                 </Typography>
                                 <Typography variant='h6' sx={{ fontSize: 'clamp(18px,4vw,20px)', lineHeight: '26px', marginBottom: '10px' }}>
-                                    <NavLink to='' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Accounting for Letting Agents</NavLink>
+                                    <NavLink to='/specialisms/accounting-for-letting-agents/' className='footer-link' style={{ textDecoration: 'none', color: 'rgb(255,255,255)' }}>Accounting for Letting Agents</NavLink>
                                 </Typography>
                             </Box>
                         </Grid2>
