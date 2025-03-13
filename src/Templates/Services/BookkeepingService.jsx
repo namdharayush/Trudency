@@ -77,7 +77,7 @@ function BookkeepingService() {
                         sx={{
                             height: "max-content",
                             textAlign: "center",
-                            overflowX: "hidden",
+                            overflow: "hidden",
                             position: "relative",
                             backgroundColor: '#00454e',
                             paddingTop: '50px',
@@ -1275,7 +1275,6 @@ function BookkeepingService() {
                     </Container>
 
                     <Container
-                        // ref={section5Ref}
                         component="div"
                         maxWidth={false}
                         sx={{

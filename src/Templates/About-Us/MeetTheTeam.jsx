@@ -70,7 +70,7 @@ function MeetTheTeam() {
                             height: "max-content",
                             // height: "100vh",
                             textAlign: "center",
-                            overflowX: "hidden",
+                            overflow: "hidden",
                             position: "relative",
                             backgroundColor: '#00454e',
                             paddingTop: '50px',

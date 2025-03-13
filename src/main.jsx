@@ -18,6 +18,7 @@ import FinancialDirector from './Templates/Services/FinancialDirector.jsx'
 import LimitedCompany from './Templates/Specialisms/LimitedCompany.jsx'
 import CorporateAccounting from './Templates/Specialisms/CorporateAccounting.jsx'
 import Accounting from './Templates/Specialisms/Accounting.jsx'
+import OurProcess from './Templates/About-Us/OurProcess.jsx'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
           {
             path:'/about-us/case-studies',
             element:<CaseStudies />
+          },
+          {
+            path:'/about-us/our-process',
+            element:<OurProcess />
           },
 
         ]

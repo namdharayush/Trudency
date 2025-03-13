@@ -72,11 +72,11 @@ function LimitedCompany() {
                         sx={{
                             height: "max-content",
                             textAlign: "center",
-                            overflowX: "hidden",
+                            overflow: "hidden",
                             position: "relative",
                             backgroundColor: '#00454e',
                             paddingTop: '50px',
-                            paddingBottom: '50px',
+                            paddingBottom: '120px',
                             paddingLeft: '120px',
                             paddingRight: '120px',
                             marginTop: '50px',

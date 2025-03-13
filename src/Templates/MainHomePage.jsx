@@ -920,7 +920,7 @@ function MainHomePage() {
 
                             <Grid2 size={{ xs: 12, sm: 6 }} order='1' sx={{ padding: { xs: '0 10px 0 10px', sm: '0 10px 0 25px', lg: '0 10px 0 10px' }, marginTop: { xs: '50px', sm: '0' } }} >
 
-                                <Box component='div'>
+                                <Box component='div' sx={{marginLeft : {lg:'80px'}}}>
                                     <Box component='div' sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' }, flexWrap: { xs: 'wrap', sm: 'nowrap' } }}>
                                         <Typography variant="h3" sx={{
                                             fontSize: {
